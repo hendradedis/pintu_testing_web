@@ -81,29 +81,29 @@ export const TableCard = () => {
                 )}
                   {splitWeek?.length === 2 ? (
                   <td className="py-4 px-6 font-bold text-[16px] text-red-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.week || 0}%
                   </td>
                 ) : (
                   <td className="py-4 px-6 font-bold text-[16px] text-green-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.week || 0}%
                   </td>
                 )}
                    {splitMonth?.length === 2 ? (
                   <td className="py-4 px-6 font-bold text-[16px] text-red-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.month || 0}%
                   </td>
                 ) : (
                   <td className="py-4 px-6 font-bold text-[16px] text-green-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.month || 0}%
                   </td>
                 )}
                    {splitYears?.length === 2 ? (
                   <td className="py-4 px-6 font-bold text-[16px] text-red-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.year || 0}%
                   </td>
                 ) : (
                   <td className="py-4 px-6 font-bold text-[16px] text-green-500">
-                    {objectPrice?.day || 0}%
+                    {objectPrice?.year || 0}%
                   </td>
                 )}
               </tr>
