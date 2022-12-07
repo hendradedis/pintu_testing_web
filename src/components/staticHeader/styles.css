@@ -1,0 +1,12 @@
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    background:red
+}
+.logo{
+    width: 80px;
+    height: 20px;
+}
