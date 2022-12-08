@@ -17,11 +17,16 @@ export const RecomendedCard = ({
   percentage,
   Arraydata,
 }: RecomendedCardProps) => {
+  let subStringTitle: string = title;
+  if (subStringTitle != null && subStringTitle.length > 10) {
+    subStringTitle = subStringTitle.substring(0, 8) + "...";
+  }
+
   return (
     <div className="px-4 white h-36 w-52 py-1 hover:bg-gray-100 pt-4 mr-8 rounded cursor-pointer">
       <div className="flex justify-self-center">
         <img src={logos} alt={""} className="mr-4" />
-        <a className="font-bold text-[18px]">{title}</a>
+        <a className="font-bold text-[18px]">{subStringTitle}</a>
       </div>
       <div className="py-2">
         <a className="text-[12px] font-semibold font-sans text-gray-500">{`Rp ${formatToRupiah(

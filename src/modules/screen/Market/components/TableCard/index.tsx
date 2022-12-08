@@ -19,7 +19,7 @@ export const TableCard = () => {
   };
 
   return (
-    <div className="overflow-x-auto relative mt-10 rounded mx-22 ">
+    <div className="overflow-x-auto relative mt-10 rounded mx-22 cursor-pointer ">
       <table className="w-full text-sm text-left border py-24">
         <thead className="text-xs text-gray-700 border-b">
           <tr>
@@ -52,7 +52,7 @@ export const TableCard = () => {
             const splitMonth = objectPrice?.month?.split("-");
             const splitYears = objectPrice?.year?.split("-");
             return (
-              <tr className="bg-white border-b" key={index}>
+              <tr className="bg-white border-b cursor-pointer" key={index}>
                 <div className="flex">
                   <img src={item.logo} alt={item?.name} className="ml-3" />
                   <th
